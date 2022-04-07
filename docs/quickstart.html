@@ -786,7 +786,7 @@ same way as the regular <code class="xref py py-class docutils literal notransla
 </section>
 <section id="external-approximate-full-configuration-interaction-solvers">
 <span id="extfci"></span><h3 id="external-approximate-full-configuration-interaction-solvers">External Approximate Full Configuration Interaction Solvers<a class="headerlink" href="#external-approximate-full-configuration-interaction-solvers" title="Permalink to this headline">¶</a></h3>
-<p>Besides the exact solvers discussed <a class="reference internal" href="#fci"><span class="std std-ref">earlier</span></a>, PySCF has interfaces to efficient approximate solvers. For instance, the <a class="reference external" href="https://github.com/sanshar/StackBlock">StackBlock</a> code can be used as a DMRG solver to perform parallel DMRGSCF calculations across several processes (cf. <a class="reference external" href="https://github.com/pyscf/pyscf/blob/master/examples/dmrg/01-dmrg_casscf_with_stackblock.py">dmrg/01-dmrg_casscf_with_stackblock.py</a>):</p>
+<p>Besides the exact solvers discussed <a class="reference internal" href="#fci"><span class="std std-ref">earlier</span></a>, PySCF has interfaces to efficient approximate solvers. For instance, the <a class="reference external" href="https://github.com/sanshar/StackBlock">StackBlock</a> or <a class="reference external" href="https://github.com/block-hczhai/block2-preview">block2</a> code can be used as a DMRG solver to perform parallel DMRGSCF calculations across several processes (cf. <a class="reference external" href="https://github.com/pyscf/dmrgscf/blob/master/examples/01-dmrg_casscf_with_stackblock.py">dmrg/01-dmrg_casscf_with_stackblock.py</a>):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyscf</span> <span class="kn">import</span> <span class="n">dmrgscf</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyscf.dmrgscf</span> <span class="kn">import</span> <span class="n">settings</span>
@@ -955,7 +955,7 @@ Alternatively, molecular effective core potentials can be used by setting the <c
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

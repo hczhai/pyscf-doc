@@ -925,13 +925,16 @@ installed with::
 <h3 id="dmrg-solvers">DMRG solvers<a class="headerlink" href="#dmrg-solvers" title="Permalink to this headline">¶</a></h3>
 <p>Density matrix renormalization group (DMRG) theory is a powerful
 method for solving ab initio quantum chemistry problems. PySCF can be
-used with two implementations of DMRG: Block
-(<a class="reference external" href="https://sanshar.github.io/Block">https://sanshar.github.io/Block</a>) and CheMPS2
-(<a class="reference external" href="http://sebwouters.github.io/CheMPS2/index.html">http://sebwouters.github.io/CheMPS2/index.html</a>).  <a class="reference external" href="https://sanshar.github.io/Block/build.html">Installing Block</a> requires a C++11
+used with three implementations of DMRG: Block
+(<a class="reference external" href="https://sanshar.github.io/Block">https://sanshar.github.io/Block</a>), block2
+(<a class="reference external" href="https://block2.readthedocs.io/en/latest">https://block2.readthedocs.io/en/latest</a>), and CheMPS2
+(<a class="reference external" href="http://sebwouters.github.io/CheMPS2/index.html">http://sebwouters.github.io/CheMPS2/index.html</a>).</p>
+<p><a class="reference external" href="https://sanshar.github.io/Block/build.html">Installing Block</a> requires a C++11
 compiler.  If C++11 is not supported by your compiler, you can
-register and download the precompiled Block binary from
-<a class="reference external" href="https://sanshar.github.io/Block/build.html">https://sanshar.github.io/Block/build.html</a>.  Before using Block or
-CheMPS2, you need create a configuration file
+download the precompiled Block binary from <a class="reference external" href="https://sanshar.github.io/Block/build.html">https://sanshar.github.io/Block/build.html</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">block2</span></code> can be easily installed via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">block2</span></code> or <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">block2-mpi</span></code>,
+or <a class="reference external" href="https://block2.readthedocs.io/en/latest/user/installation.html">building from source</a>.</p>
+<p>Before using Block or CheMPS2, you need create a configuration file
 <code class="docutils literal notranslate"><span class="pre">pyscf/dmrgscf/settings.py</span></code> (as shown by settings.py.example) to
 store the path where the DMRG solver was installed.</p>
 </section>
@@ -1002,7 +1005,7 @@ plugin can be enabled with:</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>
